@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+    postgres:
+        image: postgres
+        restart: always
+        container_name: atm
+        environment:
+            - POSTGRES_ROOT_PASSWORD=147369
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=147369
+            - POSTGRES_DATABASE=atm
+
+        ports:
+            - '3306:3306'
